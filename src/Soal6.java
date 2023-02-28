@@ -3,6 +3,7 @@
 public class Soal6 {
     public static void main(String[] args) {
         String kalimat = "aku belajar pemrograman";
+        kalimat.toLowerCase();
         int a = 0, i = 0, u = 0 ,e = 0, o = 0;
 
         for(int j = 0; j < kalimat.length(); j++) {
