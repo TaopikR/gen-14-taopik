@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class HargaBarang {
+public class FileBarang {
     public static void main(String[] args) throws Exception {
         List<Barang> daftarBarang = new ArrayList<>();
         Barang oreo = new Barang("Oreo", 5000, 10);
