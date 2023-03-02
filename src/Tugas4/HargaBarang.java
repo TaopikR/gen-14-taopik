@@ -1,3 +1,5 @@
+package Tugas4;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +20,7 @@ public class HargaBarang {
 
         try {
             FileWriter membuatDaftarBarang = new FileWriter("daftarBarang.txt");
-            System.out.println("Stok Barang Saat Ini" );
+            System.out.println("Stok Tugas4.Barang Saat Ini" );
             for (Barang b : daftarBarang) {
                 membuatDaftarBarang.write(b.toString());
             }

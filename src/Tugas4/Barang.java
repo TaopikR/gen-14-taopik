@@ -1,3 +1,5 @@
+package Tugas4;
+
 public class Barang {
     private String nama;
     private int harga;
