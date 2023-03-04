@@ -1,0 +1,175 @@
+body {
+    padding: 50px;
+    background-image: linear-gradient(-20deg, #fcf7f8 0%, #03bada 100%);
+    text-align: center;
+    font-family: 'Poppins';
+    overflow: hidden;
+    opacity: .9;
+}
+
+ul {
+    margin-left: -45px;
+}
+li {
+    list-style: none;
+    display: inline-block;
+}
+.main {
+    width: 800px;
+    height: 520px;
+    background-color: #fafafa;
+    margin: 0 auto;
+    padding-top: 20px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    overflow: auto;
+
+}
+
+.img {
+    background-image: url(/css/img.jpg);
+    background-color: #eaeaea;
+    background-size: cover;
+    border-radius: 100px;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border: 1px solid #eaeaea;
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    font-weight: bold;
+    color: #03000c;
+}
+
+.text {
+    text-align: center;
+    font-size: 15px;
+    margin: 0;
+    color: #324e63;
+}
+p {
+    margin: 0 auto;
+    padding-top: 3px;
+    width: 500px;
+    height: auto;
+    color: #151718;
+    line-height: 25px;
+}
+h2 {
+    font-size: 19px;
+    margin-bottom: 0;
+}
+
+.container {
+    width: 400px;
+    background-color: rgb(211, 223, 224);
+    margin: 15px auto;
+    padding: 30px;
+    box-shadow: 0 0 3px 3px rgba (0,0,0,.3);
+    border-radius: 5px;
+}
+
+.gallery li {
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+    margin-left: 10px;
+}
+.gallery li img {
+    border-radius: 5px;
+
+}
+
+.gallery li span {
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(200,200,200,.4);
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 120px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    opacity: 0;
+    transition: .3s;
+}
+
+.gallery li a:hover span {
+    opacity: 1;
+}
+
+.overlay {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0);
+    z-index: 9999;
+    transition: .8s;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.overlay:target {
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.7);
+    width: auto;
+    height: auto;
+}
+
+.overlay img {
+    max-height: 100%;
+    box-shadow: 2px 2px 3px rgba(0,0,0,.5);
+
+}
+
+.overlay:target img {
+    animation: zoomFade .8s;
+}
+.overlay .close {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    margin-left: -3px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border: 1px solid white;
+    padding: 5px;
+    line-height: 8px;
+    background-color: rgba(0,0,0,.2);
+
+}
+
+
+
+
+@keyframes zoomFade {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    
+}
+
+
+
+.clear {
+    clear: both;
+}
